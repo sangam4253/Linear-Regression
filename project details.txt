@@ -1,0 +1,16 @@
+Implementation of Linear Regression of West Bengal covid-19 Dataset.
+
+I have prepared a visual implementation of covid Dataset. I Used the Numpy, Matplotlib, Pandas Library. I have imported the Dataset In the jupyter Notebook and Read the Dataset and plot date Vs confirm case graph. now we have an idea about statistical details of our data.The next step is to divide the data into "attributes" and "labels. We want to predict the number of confirmed cases on a particular day.Therefore our attribute set will consist of the "Date" column, and the label will be the "Confirmed case" column.  iloc is integer-location based indexing for selection by position.it will select till the second last column of the data frame instead of the last column. Now that we have our attributes and labels, the next step is to split this data into training and test sets. We'll do this by using Scikit-Learn's built-in train_test_split() method.  by using we splits 70% of the data to training set while 30% of the data to test set. The test_size variable is where we actually specify the proportion of test set.  "Train the Algorithm"With Scikit-Learn it iextremely straight forward to implement linear regression models, as all you really need to do is import the LinearRegression class, instantiate it, and call the fit() method along with our training data.This is about as simple as it gets when using a machine learning library to train on your data.The linear regression model basically finds the best value for the intercept and slope, which results in a line that best fits the data.
+Evaluating the Algorithm
+
+'''The final step is to evaluate the performance of algorithm.
+This step is particularly important to compare how well different algorithms perform on a particular dataset.
+For regression algorithms, three evaluation metrics are commonly used:
+ 1 Mean Absolute Error (MAE) is the mean of the absolute value of the errors. 
+ 2 Mean Squared Error (MSE) is the mean of the squared errors.
+ 3 Root Mean Squared Error (RMSE) is the square root of the mean of the squared error.
+We can see that the value of root mean squared error is 1526 , which is 
+about 50% of the mean value of the percentages of all the Confirmed cases i.e. 2508.40.
+This means that our algorithm did a decent job.
+There was Challenging to converting The Data on Particular Date so i Used Datetime Library and the challenging was to split data in the Portion that can highly result can we gain from the Algorithm.
+That's all about my Project.
